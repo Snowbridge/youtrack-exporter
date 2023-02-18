@@ -1,0 +1,31 @@
+{
+  "name": "youtrack-export",
+  "version": "1.1.0",
+  "description": "Экспорт задач из Youtrack в JSON-файлы на HDD вместе с вложениями и прочими потрохами",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": "rm -Rf ./build && tsc && chmod +x ./build/main/index.js",
+    "lint": "eslint ./src/** --fix",
+    "configure":"chmod +x ./bin/configure.js && node ./bin/configure.js"
+  },
+  "keywords": [],
+  "author": "Лев Садовский",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "uuid": "^9.0.0",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^18.7.18",
+    "@types/uuid": "^8.3.4",
+    "@types/yargs": "^17.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "typescript": "^4.8.3"
+  }
+}
